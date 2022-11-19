@@ -11,6 +11,7 @@ img {
 
 body {
 font-family: 'Karla', sans-serif;
+background-color: #F2EEE2;
 }
 
 h1 {
@@ -31,4 +32,21 @@ h4 {
 
 header img {
   max-width: 4rem;
+}
+
+header {
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #342F1E;
+  display: flex;
+  flex-direction: row;
+}
+
+header nav {
+display: flex;
+flex-direction: column
+}
+
+header nav ul {
+    list-style-type: none;
 }
