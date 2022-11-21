@@ -47,6 +47,10 @@ header img {
   font-size: 4rem;
 }
 
+#menu-icon:hover {
+  color: #8F740C;
+}
+
 header {
   border-bottom: solid;
   border-width: thin;
@@ -173,6 +177,14 @@ header nav ul li a:hover {
   filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, .3));
 }
 
+.pairing-show a {
+  color: #342F1E;
+}
+
+.pairing-show a:hover {
+  color: #8F740C;
+}
+
 .upcoming {
   margin: 0 2rem;
 }
@@ -278,4 +290,8 @@ footer {
   display: flex;
   justify-content: center;
   padding: 1rem;
+}
+
+.item img {
+  max-width: 15rem;
 }
