@@ -29,16 +29,23 @@
   </header>
   <main>
     <div class="hero-banner">
-      <a href="https://www.google.com/maps/place/1234+Stittsville+Main+St,+Stittsville,+ON/@45.2691105,-75.9303035,16.54z/data=!4m5!3m4!1s0x4cd200a88a865aed:0x23054255507ab2b0!8m2!3d45.2690265!4d-75.9302637">Located at 1234 Main Street, Stittsville.</a>
-      <img src="assets/logo/banner-logo.svg" alt="">
-      <p>Cozy up into a new world of fantasy and coffee.</p>
+      <div class="banner-location">
+        <a href="https://www.google.com/maps/place/1234+Stittsville+Main+St,+Stittsville,+ON/@45.2691105,-75.9303035,16.54z/data=!4m5!3m4!1s0x4cd200a88a865aed:0x23054255507ab2b0!8m2!3d45.2690265!4d-75.9302637">Located at 1234 Main Street, Stittsville, ON</a>
+      </div>
+      <div class="banner-logo">
+        <img src="assets/logo/banner-logo.svg" alt="">
+      </div>
+      <div class="banner-tagline">
+        <p>Cozy up into a new world of fantasy and coffee.</p>
+      </div>
+      <img id="interior" src="assets/banner.jpeg" alt="">
     </div>
     <div class="description-section">
-      <img src="assets/yellow-horse.svg" alt="">
       <div class="short-description">
-        <p id="highlight">Here at Word&Way, </p>
-        <p>we understand that each novel is a new adventure. That’s why we’ve created an environment where book lovers can dive deep into their next story whith the convenience of all their favourite pick-me-ups a few steps away.</p>
+        <p><strong>Here at Word&Way,</strong>
+          we understand that each novel is a new adventure. That’s why we’ve created an environment where book lovers can dive deep into their next story whith the convenience of all their favourite pick-me-ups a few steps away.</p>
       </div>
+      <img src="assets/yellow-horse.svg" alt="">
     </div>
     <div class="pairing">
       <div class="pairing-show">
@@ -46,55 +53,65 @@
         <img src="assets/hot-drinks/hazelnut-latte.svg" alt="">
         <img src="assets/lgbtqia-stories/the-afterward.svg" alt="">
         <p>Pick up <i>The Afterward</i> by E.K. Johnston and enjoy it with a hazelnut latte.</p>
+        <span class="material-icons-round">
+          expand_more
+        </span>
       </div>
       <div class="pairing-hide">
         <p></p>
       </div>
     </div>
     <div class="upcoming">
-      <h3>Upcoming Event</h3>
-      <img src="assets/trivia-night.jpg" alt="">
-      <p>Join us at Word&Way Trivia Night, December 18th, 2022.</p>
-    </div>
-    <div class="whole-carousel">
-      <h3>Featured Products</h3>
-      <p>Add some joy and warmth to this cold season with these delicious featured products from our coffeeshop menu.</p>
-      <div class="product-carousel">
-        <div class="product">
-          <img src="assets/hot-drinks/hot-chocolate.jpg" alt="">
-          <p>Hot Chocolate</p>
-          <p>M $3.99</p>
-        </div>
-        <div class="product">
-          <img src="assets/hot-drinks/tea.jpg" alt="">
-          <p>Black Tea</p>
-          <p>M $2.49</p>
-        </div>
-        <div class="product">
-          <img src="assets/bakery/banana-bread.jpg" alt="">
-          <p>Banana Bread</p>
-          <p>$3.49</p>
-        </div>
+      <div class="upcoming-show">
+        <h3>Upcoming Event</h3>
+        <img src="assets/trivia-night.jpg" alt="">
+        <p>Join us at Word&Way Trivia Night, December 18th, 2022.</p>
+      </div>
+      <div class="upcoming-hide">
+        <p></p>
       </div>
     </div>
-    <div class="whole-carousel">
-      <h3>New Arrivals</h3>
-      <p>Be the first at Word&Way to dive into these newly arrived adventures.</p>
-      <div class="product-carousel">
-        <div class="product">
-          <img src="assets/new-arrivals/the-golem-and-the-jinni.jpg" alt="">
-          <a href="https://www.goodreads.com/book/show/15819028-the-golem-and-the-jinni"><i>The Golem and the Jinni</i></a>
-          <p>by Helene Wecker</p>
+    <div class="carousels">
+      <div class="whole-carousel">
+        <h3>Featured Products</h3>
+        <p>Add some joy and warmth to this cold season with these delicious featured products from our coffeeshop menu.</p>
+        <div class="product-carousel">
+          <div class="product">
+            <img src="assets/hot-drinks/hot-chocolate.jpg" alt="">
+            <p>Hot Chocolate</p>
+            <p>M $3.99</p>
+          </div>
+          <div class="product">
+            <img src="assets/hot-drinks/tea.jpg" alt="">
+            <p>Black Tea</p>
+            <p>M $2.49</p>
+          </div>
+          <div class="product">
+            <img src="assets/bakery/banana-bread.jpg" alt="">
+            <p>Banana Bread</p>
+            <p>$3.49</p>
+          </div>
         </div>
-        <div class="product">
-          <img src="assets/new-arrivals/graceling.jpg" alt="">
-          <a href="https://www.goodreads.com/book/show/3236307-graceling"><i>Graceling</i></a>
-          <p>by Kristin Cashore</p>
-        </div>
-        <div class="product">
-          <img src="assets/new-arrivals/criers-war.jpg" alt="">
-          <a href="https://www.goodreads.com/en/book/show/41951626-crier-s-war"><i>Crier's War</i></a>
-          <p>by Nina Varela</p>
+      </div>
+      <div class="whole-carousel">
+        <h3>New Arrivals</h3>
+        <p>Be the first at Word&Way to dive into these newly arrived adventures.</p>
+        <div class="product-carousel">
+          <div class="product">
+            <img src="assets/new-arrivals/the-golem-and-the-jinni.jpg" alt="">
+            <a href="https://www.goodreads.com/book/show/15819028-the-golem-and-the-jinni"><i>The Golem and the Jinni</i></a>
+            <p>by Helene Wecker</p>
+          </div>
+          <div class="product">
+            <img src="assets/new-arrivals/graceling.jpg" alt="">
+            <a href="https://www.goodreads.com/book/show/3236307-graceling"><i>Graceling</i></a>
+            <p>by Kristin Cashore</p>
+          </div>
+          <div class="product">
+            <img src="assets/new-arrivals/criers-war.jpg" alt="">
+            <a href="https://www.goodreads.com/en/book/show/41951626-crier-s-war"><i>Crier's War</i></a>
+            <p>by Nina Varela</p>
+          </div>
         </div>
       </div>
     </div>
@@ -103,8 +120,8 @@
       <p id="contact-us">Contact Us!</p>
       <p>We'd be happy to hear from you.</p>
       <div class="contact-info">
-        <a id="email" href="#">613-123-1234</a>
-        <a id="phone" href="#">admin@wordandway.com</a>
+        <a id="email" href="#">admin@wordandway.com</a>
+        <a id="phone" href="#">613-123-1234</a>
         <a id="location" href="https://www.google.com/maps/place/1234+Stittsville+Main+St,+Stittsville,+ON/@45.2691105,-75.9303035,16.54z/data=!4m5!3m4!1s0x4cd200a88a865aed:0x23054255507ab2b0!8m2!3d45.2690265!4d-75.9302637">1234 Stittsville Main Street, Stittsville, ON</a>
       </div>
     </div>
