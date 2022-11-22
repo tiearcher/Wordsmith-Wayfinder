@@ -222,8 +222,19 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #F9F6F1;
   margin: 4rem 0;
+}
+
+.whole-carousel h3 {
+  margin: .5rem 0 0;
+  padding: .5rem;
+}
+
+.whole-carousel p {
+  margin: 0;
+  padding: .5rem 1rem;
 }
 
 .contact {
@@ -294,4 +305,61 @@ footer {
 
 .item img {
   max-width: 15rem;
+}
+
+.sub-navigation nav ul {
+  list-style-type: none;
+}
+
+.sub-navigation nav ul li a{
+  text-decoration: none;
+  color: #342F1E;
+  font-size: 1.6rem;
+}
+
+.sub-navigation nav ul li a:hover {
+  color: #8F740C;
+}
+
+.sub-navigation nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-navigation nav ul li {
+  padding: .5rem 3rem .5rem;
+  border-bottom: solid;
+  border-color: #8F740C;
+  border-width: thin;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F9F6F1;
+}
+
+.item p {
+  max-width: 14.5rem;
+  color: #342F1E;
+  text-align: center;
+}
+
+.item a {
+  max-width: 14.5rem;
+  color: #342F1E;
+  text-align: center;
+}
+
+.item a:hover {
+  color: #8F740C
 }
