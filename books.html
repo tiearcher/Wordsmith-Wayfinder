@@ -8,15 +8,27 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet">
-</head>
+  <script src="js/main.js"></script>
+  </head>
 
-<body>
+  <body>
   <header>
-    <img src="assets/logo/header-logo.svg" alt="">
-    <nav class="menu">
-      <input type="radio" name="menuopt" id="drop1" />
-    <label class="opener" for="drop1"><span id="menu-icon" class="material-icons-round">menu</span></label>
-    <label class="closer" for="dropclose"><span id="menu-icon" class="material-icons-round">menu</span></label>
+    <div class="header-container">
+      <img src="assets/logo/header-logo.svg" alt="">
+      <nav class="menu-expanded">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Coffeeshop Menu</a></li>
+          <li><a href="books.html">Featured Books</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </div>
+    <nav class="menu-mobile">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Coffeeshop Menu</a></li>
@@ -24,7 +36,6 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="events.html">Events</a></li>
       </ul>
-      <input type="radio" name="menuopt" id="dropclose" />
     </nav>
   </header>
   <main>
