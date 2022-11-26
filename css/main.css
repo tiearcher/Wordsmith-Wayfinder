@@ -38,21 +38,12 @@ h4 {
   font-family: 'Prata', serif;
 }
 
-header img {
+.header-container img {
   max-width: 5rem;
   align-self: flex-start;
 }
 
-#menu-icon {
-  font-size: 4rem;
-}
-
-#menu-icon:hover {
-  color: #8F740C;
-  cursor: pointer;
-}
-
-header {
+.header-container {
   border-bottom: solid;
   border-width: thin;
   border-color: #342F1E;
@@ -60,36 +51,103 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+  z-index: 99;
 }
 
-header nav {
+/* header nav {
 display: flex;
 flex-direction: column
+} */
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
 }
 
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before  {
+  content: '';
+  display: block;
+  width: 2.5rem;
+  height: .15rem;
+  background-color: #342F1E;
+  margin: .6rem 0;
+  transition: 0.4s;
+}
+
+.hamburger .bar:hover,
+.hamburger:after:hover,
+.hamburger:before:hover {
+  background-color: #8F740C;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-.5rem, .5rem);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-.5rem, -.5rem);
+}
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left:100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #F9F6F1;
+  margin-top: 6.25rem;
+  transition: 0.4s;
+}
+
+.menu-mobile.is-active {
+  left:0;
+}
+
+header nav ul li a{
+  display: block;
+  margin: 0 auto 1rem;
+  text-align: center;
+  padding: .75rem 1rem;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: #342F1E;
+  max-width: 12rem;
+}
+
+.menu-expanded {
+  display: none;
+}
+
+.header-container nav ul,
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-header nav ul li a {
+.header-container nav ul li a,
+header nav ul li a{
   text-decoration: none;
   color: #342F1E;
 }
 
-header nav ul li a:hover {
+.header-container nav ul li a:hover,
+header nav ul li a:hover{
   color: #8F740C;
-}
-
-.menu ul,
-.menu input,
-.menu .closer,
-.menu input:checked~.opener {
-  display: none;
-}
-
-.menu input:checked~ul,
-.menu input:checked~.closer {
-  display: contents;
 }
 
 .hero-banner {
@@ -215,7 +273,14 @@ header nav ul li a:hover {
 .pairing-hide,
 .upcoming-hide {
   background-color: #F9F6F1;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pairing-hide p,
+.upcoming-hide p  {
+  max-width: 35rem;
 }
 
 .product {
@@ -494,4 +559,15 @@ footer {
 
 .item a:hover {
   color: #8F740C
+}
+
+@media (min-width: 768px) {
+  .menu-mobile,
+  .hamburger {
+    display: none;
+  }
+
+  .menu-expanded {
+    display: contents;
+  }
 }
