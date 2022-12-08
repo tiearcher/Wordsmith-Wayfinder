@@ -498,7 +498,37 @@ footer {
 }
 
 .item a:hover {
-  color: #8F740C
+  color: #8F740C;
+}
+
+.banner {
+  padding: 2rem 4rem 0;
+}
+
+.banner h2 {
+ color: #342F1E;
+ font-size: 1.8rem;
+}
+
+.banner p {
+  max-width: 35rem;
+}
+
+.item {
+  border: solid;
+  border-width: thin;
+  border-color: #342F1E;
+}
+
+.banner img {
+  max-width: 15rem;
+  margin: 2rem;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -525,6 +555,10 @@ footer {
     border: none;
   }
 
+  .banner {
+    flex-direction: row;
+  }
+
   #interior {
     max-height: 20rem;
   }
@@ -536,6 +570,14 @@ footer {
   .item-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .sub-navigation {
+    padding-top: 2rem;
+  }
+
+  .banner {
+    justify-content: center;
   }
 
 }
@@ -589,5 +631,17 @@ footer {
   .item-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-text,
+  .contact-info {
+    margin: 2rem;
+  }
+
 
 }
