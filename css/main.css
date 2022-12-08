@@ -211,7 +211,7 @@ header nav ul li a:hover{
 .description-section {
   background-color: #F9F6F1;
   margin: 0;
-  padding: 3rem 2rem 1rem 1rem;
+  padding: 3rem 3rem 1rem 1rem;
 }
 
 .short-description p strong {
@@ -334,6 +334,11 @@ header nav ul li a:hover{
   margin: .5rem 0 0;
 }
 
+.product-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
 .carousels {
   background-color: #F2EEE2;
 }
@@ -444,6 +449,7 @@ footer {
 .sub-navigation nav ul li a{
   text-decoration: none;
   color: #342F1E;
+  transition: all ease .3s;
   /* font-size: 1.6rem; */
 }
 
@@ -522,7 +528,7 @@ footer {
 
 .banner img {
   max-width: 15rem;
-  margin: 2rem;
+  margin: 2rem 2rem 0;
 }
 
 .banner {
@@ -557,6 +563,11 @@ footer {
 
   .banner {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .banner img {
+    max-width: 18rem;
   }
 
   #interior {
@@ -564,7 +575,11 @@ footer {
   }
 
   .description-section {
-    padding-right: 6rem;
+    padding-right: 12rem;
+  }
+
+  .short-description p {
+    max-width: 30rem;
   }
 
   .item-grid {
@@ -576,8 +591,8 @@ footer {
     padding-top: 2rem;
   }
 
-  .banner {
-    justify-content: center;
+  .product-carousel {
+    flex-direction: row;
   }
 
 }
@@ -643,5 +658,12 @@ footer {
     margin: 2rem;
   }
 
+  .short-description p {
+    padding-left: 40rem;
+  }
+
+  .banner img {
+    max-width: 23rem;
+  }
 
 }
