@@ -7,3 +7,21 @@ window.onload = function () {
     menu_mobile.classList.toggle('is-active');
   });
 }
+
+function myFunction1() {
+  var x = document.getElementById("pairing-hide");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("upcoming-hide");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
