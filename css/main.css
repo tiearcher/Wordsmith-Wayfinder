@@ -303,7 +303,10 @@ header nav ul li a:hover{
   background-color: #F9F6F1;
   padding: 1.5rem 2rem;
   text-align: center;
+  justify-content: center;
   display: none;
+  max-width: 30rem;
+  margin: auto;
 }
 
 .pairing-hide p,
@@ -313,6 +316,12 @@ header nav ul li a:hover{
 .upcoming-show p,
 .upcoming-show img  {
   max-width: 30rem;
+}
+
+.pairing-hide p,
+.upcoming-hide p {
+  margin: auto;
+  padding: 1.5rem;
 }
 
 .product {
@@ -592,6 +601,7 @@ footer {
 
   .banner-wrapper img {
     width: 18rem;
+    margin-top: 3rem;
   }
 
   #interior {
@@ -615,10 +625,12 @@ footer {
     padding-top: 2rem;
   }
 
+}
+
+@media (min-width: 940px) {
   .product-carousel {
     flex-direction: row;
   }
-
 }
 
 @media (min-width: 1280px) {
@@ -663,8 +675,9 @@ footer {
     height: 3rem;
   }
 
-  .upcoming-hide {
-    height: 12.5rem;
+  .upcoming-hide,
+  .pairing-hide {
+    height: 14rem;
   }
 
   .item-grid {
@@ -684,10 +697,6 @@ footer {
 
   .short-description p {
     padding-left: 40rem;
-  }
-
-  .banner-wrapper img {
-    width: 23rem;
   }
 
 }
