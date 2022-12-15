@@ -17,11 +17,6 @@ margin: 0;
 font-size: 1.1rem;
 }
 
-/* main {
-  max-width: 1000px;
-  margin: 0 auto;
-} */
-
 .material-icons-round {
   color: #342F1E;
 }
@@ -60,11 +55,9 @@ h4 {
   z-index: 9;
 }
 
-/* header nav {
-display: flex;
-flex-direction: column
-} */
-
+.hamburger-wrapper {
+  margin: 0 1.5rem;
+}
 .hamburger {
   position: relative;
   display: block;
@@ -578,6 +571,10 @@ footer {
 
   .menu-mobile,
   .hamburger {
+    display: none;
+  }
+
+  .hamburger-wrapper {
     display: none;
   }
 
